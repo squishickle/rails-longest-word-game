@@ -1,0 +1,22 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+h1, p, h3 {
+  font-family: 'Cabin', sans-serif;
+  text-decoration: none;
+}
+
+.inline-list{
+  display: flex;
+}
+
+.letters {
+  list-style-type: none;
+  padding: 15px 20px;
+  margin: 10px;
+  background-color: #ff9a7a;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}

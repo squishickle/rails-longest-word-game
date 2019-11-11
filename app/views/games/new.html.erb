@@ -1,0 +1,16 @@
+<h1>New Game</h1>
+<div>
+  <ul class="inline-list">
+  <% @letters.each do |letter| %>
+  <li class="letters"><%= letter.upcase %></li>
+  <% end %>
+  </ul>
+  <form action="/score" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :grid, @letters %>
+    <%= hidden_field_tag :start_time, @start_time %>
+    <input type="text" name="attempt">
+    <input type="submit" value="Submit...">
+  </form>
+</div>
+
